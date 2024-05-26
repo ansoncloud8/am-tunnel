@@ -3,9 +3,9 @@
 
 这是一个基于 Cloudflare Workers 和 Pages平台的脚本，在原版的基础上修改了显示 VLESS 配置信息转换为订阅内容。使用该脚本，你可以方便地将 VLESS、trojan 配置信息使用在线配置转换到 Clash、 Singbox 、Quantumult X等工具中。
 
-- 基础部署视频教程：https://youtube.com/@AM_CLUB
-- 快速部署视频教程：https://youtube.com/@AM_CLUB ***最佳推荐!!!***
-- 进阶使用视频教程：https://youtube.com/@AM_CLUB
+- 基础部署视频教程：https://www.youtube.com/watch?v=f9hDJCqAEGA
+- 快速部署视频教程：https://www.youtube.com/watch?v=f9hDJCqAEGA ***最佳推荐!!!***
+- 进阶使用视频教程：https://www.youtube.com/watch?v=f9hDJCqAEGA
 
 Telegram交流群：[@AM_CLUB](https://t.me/AM_CLUBS)
 
@@ -32,7 +32,7 @@ Telegram交流群：[@AM_CLUB](https://t.me/AM_CLUBS)
 - 通过提交虚假的节点配置给订阅服务，避免节点配置信息泄露。
 
 
-## Workers 部署方法 [视频教程](https://youtube.com/@AM_CLUB)
+## Workers 部署方法 [视频教程](https://www.youtube.com/watch?v=f9hDJCqAEGA)
 1. 部署 Cloudflare Worker：
    - 在 Cloudflare Worker 控制台中创建一个新的 Worker。
    - 将 [worker.js](https://github.com/ansoncloud8/am-tunnel/blob/dev/_worker.js) 的内容粘贴到 Worker 编辑器中。
