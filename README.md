@@ -4,8 +4,8 @@
 这是一个基于 Cloudflare Workers 和 Pages平台的脚本，在原版的基础上修改了显示 VLESS 配置信息转换为订阅内容。使用该脚本，你可以方便地将 VLESS、trojan 配置信息使用在线配置转换到 Clash、 Singbox 、Quantumult X等工具中。
 
 - 基础部署视频教程：https://www.youtube.com/watch?v=f9hDJCqAEGA
-- 快速部署视频教程：https://www.youtube.com/watch?v=f9hDJCqAEGA ***最佳推荐!!!***
-- 进阶使用视频教程：https://www.youtube.com/watch?v=f9hDJCqAEGA
+- 快速部署视频教程：https://www.youtube.com/watch?v=T3XiHUDAA3o 
+- 进阶使用视频教程：https://www.youtube.com/watch?v=8oZvklBkMj4 ***最佳推荐!!!***
 
 Telegram交流群：[@AM_CLUB](https://t.me/AM_CLUBS)
 
@@ -50,7 +50,7 @@ Telegram交流群：[@AM_CLUB](https://t.me/AM_CLUBS)
 
 </details>
 
-## Pages 上传 部署方法 **最佳推荐!!!** [视频教程](https://youtube.com/@AM_CLUB)
+## Pages 上传 部署方法 **最佳推荐!!!** [视频教程](https://www.youtube.com/watch?v=8oZvklBkMj4)
 1. 部署 Cloudflare Pages：
    - 下载 [_worker.js.zip](https://raw.githubusercontent.com/ansoncloud8/am-tunnel/dev/_worker.js.zip) 文件，并点上 Star !!!
    - 在 Cloudflare Pages 控制台中选择 `上传资产`后，为你的项目取名后点击 `创建项目`，然后上传你下载好的 [_worker.js.zip](https://raw.githubusercontent.com/ansoncloud8/am-tunnel/dev/_worker.js.zip) 文件后点击 `部署站点`。
@@ -66,7 +66,7 @@ Telegram交流群：[@AM_CLUB](https://t.me/AM_CLUBS)
    - 例如 `https://vless.google.pages.dev/sub/bestip/90cd4a77-141a-43c9-991b-08263cfe9c10?format=qx&uuid=68ecf7d9-5eb3-31ee-fe78-134a3d519356` Quantumult X订阅格式，适用Quantumult X工具。
 
 
-3. 给 Pages绑定 CNAME自定义域：[视频教程](https://youtube.com/@AM_CLUB)
+3. 给 Pages绑定 CNAME自定义域：[视频教程](https://www.youtube.com/watch?v=8oZvklBkMj4)
    - 在 Pages控制台的 `自定义域`选项卡，下方点击 `设置自定义域`。
    - 填入你的自定义次级域名，注意不要使用你的根域名，例如：
      您分配到的域名是 `google.com`，则添加自定义域填入 `vless.google.com`即可；
@@ -74,7 +74,7 @@ Telegram交流群：[@AM_CLUB](https://t.me/AM_CLUBS)
 
 </details>
 
-## Pages GitHub 部署方法 [视频教程](https://youtube.com/@AM_CLUB)
+## Pages GitHub 部署方法 
 1. 部署 Cloudflare Pages：
    - 在 Github 上先 Fork 本项目，并点上 Star !!!
    - 在 Cloudflare Pages 控制台中选择 `连接到 Git`后，选中 `am-tunnel`项目后点击 `开始设置`。
@@ -89,7 +89,7 @@ Telegram交流群：[@AM_CLUB](https://t.me/AM_CLUBS)
    - 例如 `https://vless.google.pages.dev/sub/bestip/90cd4a77-141a-43c9-991b-08263cfe9c10?format=singbox&uuid=68ecf7d9-5eb3-31ee-fe78-134a3d519356` singbox订阅格式，适用singbox等。
    - 例如 `https://vless.google.pages.dev/sub/bestip/90cd4a77-141a-43c9-991b-08263cfe9c10?format=qx&uuid=68ecf7d9-5eb3-31ee-fe78-134a3d519356` Quantumult X订阅格式，适用Quantumult X工具。
 
-3. 给 Pages绑定 CNAME自定义域：[视频教程](https://youtube.com/@AM_CLUB)
+3. 给 Pages绑定 CNAME自定义域：[视频教程](https://www.youtube.com/watch?v=8oZvklBkMj4)
    - 在 Pages控制台的 `自定义域`选项卡，下方点击 `设置自定义域`。
    - 填入你的自定义次级域名，注意不要使用你的根域名，例如：
      您分配到的域名是 `google.com`，则添加自定义域填入 `vless.google.com`即可；
@@ -101,8 +101,8 @@ Telegram交流群：[@AM_CLUB](https://t.me/AM_CLUBS)
 ## 变量说明
 | 变量名 | 示例 | 必填 | 备注 | YT |  |
 |--------|---------|-|-----|-----|--------|
-| UUID | 90cd4a77-141a-43c9-991b-08263cfe9c10 |√| Powershell -NoExit -Command "[guid]::NewGuid()"| [Video](https://youtube.com/@AM_CLUB) |  |
-| PROXYIP | proxyip.fxxk.dedyn.io |×| 备选作为访问CloudFlareCDN站点的代理节点(支持多ProxyIP, ProxyIP之间使用`,`或 换行 作间隔) | [Video](https://youtube.com/@AM_CLUB) |  |
+| UUID | 90cd4a77-141a-43c9-991b-08263cfe9c10 |√| Powershell -NoExit -Command "[guid]::NewGuid()"| [Video](https://www.youtube.com/watch?v=8oZvklBkMj4) |  |
+| PROXYIP | proxyip.fxxk.dedyn.io |×| 备选作为访问CloudFlareCDN站点的代理节点(支持多ProxyIP, ProxyIP之间使用`,`或 换行 作间隔) | [Video](https://www.youtube.com/watch?v=8oZvklBkMj4) |  |
 
 
 ## Star 星星走起
