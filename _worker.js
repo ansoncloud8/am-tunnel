@@ -139,6 +139,7 @@ export default {
 						return response;
 					};
 					case `/sub/bestip/${userID_Path}`: {
+						const tls = true;
 						// 如果是使用默认域名，则改成一个workers的域名，订阅器会加上代理
 						const hostName = request.headers.get('Host');
 						const userAgentHeader = request.headers.get('User-Agent');
