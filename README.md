@@ -103,6 +103,7 @@ Telegram交流群：[@AM_CLUB](https://t.me/AM_CLUBS)
 |--------|---------|-|-----|-----|--------|
 | UUID | 90cd4a77-141a-43c9-991b-08263cfe9c10 |√| Powershell -NoExit -Command "[guid]::NewGuid()"| [Video](https://www.youtube.com/watch?v=8oZvklBkMj4) |  |
 | PROXYIP | proxyip.fxxk.dedyn.io |×| 备选作为访问CloudFlareCDN站点的代理节点(支持多ProxyIP, ProxyIP之间使用`,`或 换行 作间隔) | [Video](https://www.youtube.com/watch?v=8oZvklBkMj4) |  |
+| ADDRESSESAPI | https://raw.githubusercontent.com/ansoncloud8/am-tunnel/dev/ipv4.txt |×| 备选作为优选IP的自己库) | [Video](https://www.youtube.com/watch?v=8oZvklBkMj4) |  |
 
 
 ## Star 星星走起
