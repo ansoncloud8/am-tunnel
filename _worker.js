@@ -75,7 +75,12 @@ export default {
 			if (userID.includes(',')) {
 				userID_Path = userID.split(',')[0];
 			}
-			addressesapi = env.ADDRESSESAPI || addressesapi;
+
+			if (env.ADDRESSESAPI){
+				addressesapi = [];
+				addressesapi = await ADD(env.ADDRESSESAPI);
+			} 		
+			
 			const upgradeHeader = request.headers.get('Upgrade');
 			if (!upgradeHeader || upgradeHeader !== 'websocket') {
 				switch (url.pathname) {
