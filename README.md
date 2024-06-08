@@ -7,8 +7,10 @@
 - 快速部署视频教程：https://www.youtube.com/watch?v=T3XiHUDAA3o 
 - 进阶使用视频教程：https://www.youtube.com/watch?v=8oZvklBkMj4 ***最佳推荐!!!***
 
-Telegram交流群：[@AM_CLUB](https://t.me/AM_CLUBS)
-临时订阅地址：https://worker.amcloud.filegear-sg.me/866853eb-5293-4f09-bf00-e13eb237c655
+- Telegram交流群：[@AM_CLUB](https://t.me/AM_CLUBS)
+- YouTube频道：https://youtube.com/@AM_CLUB
+- 临时订阅地址：https://worker.amcloud.filegear-sg.me/866853eb-5293-4f09-bf00-e13eb237c655
+
 
 # 免责声明
 
@@ -103,8 +105,8 @@ Telegram交流群：[@AM_CLUB](https://t.me/AM_CLUBS)
 | 变量名 | 示例 | 必填 | 备注 | YT |  |
 |--------|---------|-|-----|-----|--------|
 | UUID | 90cd4a77-141a-43c9-991b-08263cfe9c10 |√| Powershell -NoExit -Command "[guid]::NewGuid()"| [Video](https://www.youtube.com/watch?v=8oZvklBkMj4) |  |
-| PROXYIP | proxyip.fxxk.dedyn.io |×| 备选作为访问CloudFlareCDN站点的代理节点(支持多ProxyIP, ProxyIP之间使用`,`或 换行 作间隔) | [Video](https://www.youtube.com/watch?v=8oZvklBkMj4) |  |
-| ADDRESSESAPI | https://raw.githubusercontent.com/ansoncloud8/am-tunnel/dev/ipv4.txt |×| 备选作为优选IP的自己库) | [Video](https://www.youtube.com/watch?v=8oZvklBkMj4) |  |
+| PROXYIP | proxyip.fxxk.dedyn.io |×| 备选作为访问CloudFlareCDN站点的代理节点(支持多ProxyIP, ProxyIP之间使用`,`或 换行 作间隔) | [Video](https://youtu.be/CiSdaNOCyOk) |  |
+| ADDRESSESAPI | https://raw.githubusercontent.com/ansoncloud8/am-tunnel/dev/ipv4.txt |×| 备选作为优选IP的自己库) | [Video](https://youtu.be/9WoMNrxV0HE) |  |
 
 
 ## Star 星星走起
