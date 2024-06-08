@@ -106,10 +106,18 @@ export default {
 						const searchParams = url.searchParams;
 						const format = searchParams.get('format') ? searchParams.get('format').toLowerCase() : null;
 						const dq = searchParams.get('dq') ? searchParams.get('dq') : null;
+						const btoa_not = searchParams.get('btoa') ? searchParams.get('btoa').toLowerCase() : null;
 						const vlessSubConfig = createVLESSSub(userID, request.headers.get('Host'), format, dq);
 
 						// Construct and return response object
 						if (format === 'qx') {
+							return new Response(vlessSubConfig, {
+								status: 200,
+								headers: {
+									"Content-Type": "text/plain;charset=utf-8",
+								}
+							});
+						} else if (btoa_not === 'btoa') {
 							return new Response(vlessSubConfig, {
 								status: 200,
 								headers: {
@@ -132,17 +140,27 @@ export default {
 						fakeUserID = uuid;
 						fakeHostName = url.searchParams.get('host') ? url.searchParams.get('host').toLowerCase() : request.headers.get('Host');
 						const vlessSubConfig = createVlessBestIpSub(fakeUserID, fakeHostName, newAddressesapi, 'format');
+						const btoa_not = url.searchParams.get('btoa') ? url.searchParams.get('btoa').toLowerCase() : null;
 
-						const base64Response = btoa(vlessSubConfig); // 重新进行 Base64 编码
-						const response = new Response(base64Response, {
-							headers: {
-								// "Content-Disposition": `attachment; filename*=utf-8''${encodeURIComponent(FileName)}; filename=${FileName}`,
-								"content-type": "text/plain; charset=utf-8",
-								"Profile-Update-Interval": `${SUBUpdateTime}`,
-								"Subscription-Userinfo": `upload=${UD}; download=${UD}; total=${total}; expire=${expire}`,
-							},
-						});
-						return response;
+					    if (btoa_not === 'btoa') {
+							return new Response(vlessSubConfig, {
+								status: 200,
+								headers: {
+									"Content-Type": "text/plain;charset=utf-8",
+								}
+							});
+						}else {
+							const base64Response = btoa(vlessSubConfig); // 重新进行 Base64 编码
+							const response = new Response(base64Response, {
+								headers: {
+									// "Content-Disposition": `attachment; filename*=utf-8''${encodeURIComponent(FileName)}; filename=${FileName}`,
+									"content-type": "text/plain; charset=utf-8",
+									"Profile-Update-Interval": `${SUBUpdateTime}`,
+									"Subscription-Userinfo": `upload=${UD}; download=${UD}; total=${total}; expire=${expire}`,
+								},
+							});
+							return response;
+						}
 					};
 					case `/sub/bestip/${userID_Path}`: {
 						const tls = true;
@@ -992,7 +1010,7 @@ clash-meta
 <a href='sing-box://import-remote-profile?url=${encodeURIComponent(subbestip)}' target='_blank'>singbox优选IP自动</a> <button onclick='copyToClipboard("${singboxlink}")'><i class="fa fa-clipboard"></i> Copy</button>
 <a href='${quantumultxlink}' target='_blank'>Quantumult X优选IP自动</a> <button onclick='copyToClipboard("${quantumultxlink}")'><i class="fa fa-clipboard"></i> Copy</button>
 <a href='sn://subscription?url=${encodeURIComponent(subbestip)}' target='_blank'>nekobox优选IP自动</a>
-<a href='v2rayng://install-config?url=${encodeURIComponent(subbestip)}' target='_blank'>v2rayNG优选IP自动</a></p>`;
+<a href='${subbestip}&btoa=btoa' target='_blank'>v2rayN优选IP自动</a><button onclick='copyToClipboard("${subbestip}&btoa=btoa")'><i class="fa fa-clipboard"></i> Copy</button></p>`;
 	// HTML Head with CSS and FontAwesome library
 	const htmlHead = `
   <head>
