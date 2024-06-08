@@ -8,10 +8,11 @@
 - 进阶使用视频教程：https://www.youtube.com/watch?v=8oZvklBkMj4 ***最佳推荐!!!***
 
 Telegram交流群：[@AM_CLUB](https://t.me/AM_CLUBS)
+临时订阅地址：https://worker.amcloud.filegear-sg.me/866853eb-5293-4f09-bf00-e13eb237c655
 
 # 免责声明
 
-本免责声明适用于 GitHub 上的 “edgetunnel” 项目（以下简称“该项目”），项目链接为：https://github.com/ansoncloud8/am-tunnel
+本免责声明适用于 GitHub 上的 “am-tunnel” 项目（以下简称“该项目”），项目链接为：https://github.com/ansoncloud8/am-tunnel
 
 ### 用途
 该项目被设计和开发仅供学习、研究和安全测试目的。它旨在为安全研究者、学术界人士和技术爱好者提供一个了解和实践网络通信技术的工具。
@@ -112,7 +113,7 @@ Telegram交流群：[@AM_CLUB](https://t.me/AM_CLUBS)
 ## 已适配自适应订阅内容
    - [v2rayN](https://github.com/2dust/v2rayN)
    - clash.meta（[clash-verge-rev
-](https://github.com/clash-verge-rev/clash-verge-rev)，[Clash Nyanpasu](https://github.com/keiko233/clash-nyanpasu)，~[clash-verge](https://github.com/zzzgydi/clash-verge/tree/main)~，ClashX Meta）
+](https://github.com/clash-verge-rev/clash-verge-rev)，[Clash Nyanpasu](https://github.com/keiko233/clash-nyanpasu)，~[clash-verge](https://github.com/zzzgydi/clash-verge/tree/main)~，ClashX Meta、openclash）
    - sing-box（SFI）
    - Quantumult X
   
