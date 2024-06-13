@@ -141,7 +141,7 @@ export default {
 						fakeHostName = url.searchParams.get('host') ? url.searchParams.get('host').toLowerCase() : request.headers.get('Host');
 						const vlessSubConfig = createVlessBestIpSub(fakeUserID, fakeHostName, newAddressesapi, 'format');
 						const btoa_not = url.searchParams.get('btoa') ? url.searchParams.get('btoa').toLowerCase() : null;
-
+						
 					    if (btoa_not === 'btoa') {
 							return new Response(vlessSubConfig, {
 								status: 200,
@@ -1012,7 +1012,7 @@ clash-meta
 <a href='sn://subscription?url=${encodeURIComponent(subbestip)}' target='_blank'>nekobox优选IP自动</a>
 <a href='${subbestip}&btoa=btoa' target='_blank'>v2rayN优选IP自动</a><button onclick='copyToClipboard("${subbestip}&btoa=btoa")'><i class="fa fa-clipboard"></i> Copy</button>
 <a href='//${hostName}/sub/${userIDArray[0]}?format=trojan' target='_blank'>trojan 节点订阅连接</a> <button onclick='copyToClipboard("${sublink}?format=trojan")'><i class="fa fa-clipboard"></i> Copy</button>
-<a href='${subbestip}&?format=trojan' target='_blank'>trojan 优选IP自动节点订阅</a> <button onclick='copyToClipboard("${subbestip}&format=trojan")'><i class="fa fa-clipboard"></i> Copy</button>
+<a href='${subbestip}&format=trojan' target='_blank'>trojan 优选IP自动节点订阅</a> <button onclick='copyToClipboard("${subbestip}&format=trojan")'><i class="fa fa-clipboard"></i> Copy</button>
 </p>`;
 	// HTML Head with CSS and FontAwesome library
 	const htmlHead = `
@@ -1199,6 +1199,7 @@ function createVlessBestIpSub(userID_Path, hostName, newAddressesapi, format) {
 	const responseBody = uniqueAddresses.map((address, i) => {
 		let port = "443";
 		let addressid = address;
+		let dq = '';
 
 		const match = addressid.match(regex);
 		if (!match) {
@@ -1226,6 +1227,7 @@ function createVlessBestIpSub(userID_Path, hostName, newAddressesapi, format) {
 			port = match[2] || port;
 			addressid = match[3] || address;
 		}
+		dq = addressid;
 		//🇸🇬 SG：新加坡 🇭🇰 HK：香港 🇰🇷 KR：韩国 🇯🇵 JP：日本 🇬🇧 GB：英国 🇺🇸 US：美国 🇼🇸 TW：台湾
 		if (addressid === 'SG') {
 			addressid = '🇸🇬 SG_' + i;
@@ -1245,9 +1247,9 @@ function createVlessBestIpSub(userID_Path, hostName, newAddressesapi, format) {
 			addressid = '📶 ' + addressid + '_' + i;
 		}
 		
-		let vlessLink = `vless://${userID_Path}@${address}:${port}?encryption=none&security=tls&sni=${hostName}&fp=random&type=ws&host=${hostName}&path=&path=%2F%3Fed%3D2048#${hostName}`;
+		let vlessLink = `vless://${userID_Path}@${address}:${port}?encryption=none&security=tls&sni=${hostName}&fp=random&type=ws&host=${hostName}&path=&path=%2F%3Fed%3D2048#${hostName}-${dq}`;
 		if (port === '80' || port === '8080' || port === '8880' || port === '2052' || port === '2086' || port === '2095' || port === '2082' ) {
-			vlessLink = `vless://${userID_Path}@${address}:${port}?encryption=none&security=&fp=random&type=ws&host=${hostName}&path=&path=%2F%3Fed%3D2048#${hostName}`;
+			vlessLink = `vless://${userID_Path}@${address}:${port}?encryption=none&security=&fp=random&type=ws&host=${hostName}&path=&path=%2F%3Fed%3D2048#${hostName}-${dq}`;
 		}
 		
 		if (format === 'qx') {
@@ -1262,9 +1264,9 @@ function createVlessBestIpSub(userID_Path, hostName, newAddressesapi, format) {
 		//trojan
 		if (format === 'trojan') {
 			if (port === '80' || port === '8080' || port === '8880' || port === '2052' || port === '2086' || port === '2095' || port === '2082' ) {
-				vlessLink = `trojan://${userID_Path}@${address}:${port}?alpn=http%2F1.1&security=tls&sni=${hostName}&fp=random&type=ws&host=${hostName}&path=&path=%2F%3Fed%3D2048#${hostName}`;
+				vlessLink = `trojan://${userID_Path}@${address}:${port}?alpn=http%2F1.1&security=tls&sni=${hostName}&fp=random&type=ws&host=${hostName}&path=&path=%2F%3Fed%3D2048#${hostName}-${dq}`;
 			}else{
-				vlessLink = `trojan://${userID_Path}@${address}:${port}?alpn=http%2F1.1&security=&fp=random&type=ws&host=${hostName}&path=&path=%2F%3Fed%3D2048#${hostName}`;
+				vlessLink = `trojan://${userID_Path}@${address}:${port}?alpn=http%2F1.1&security=&fp=random&type=ws&host=${hostName}&path=&path=%2F%3Fed%3D2048#${hostName}-${dq}`;
 			}
 		}
 		
