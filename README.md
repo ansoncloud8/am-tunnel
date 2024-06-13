@@ -118,6 +118,7 @@
 ](https://github.com/clash-verge-rev/clash-verge-rev)，[Clash Nyanpasu](https://github.com/keiko233/clash-nyanpasu)，~[clash-verge](https://github.com/zzzgydi/clash-verge/tree/main)~，ClashX Meta、openclash）
    - sing-box（SFI）
    - Quantumult X
+   - 小火箭
   
 
 # 感谢
