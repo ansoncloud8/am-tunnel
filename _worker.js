@@ -1010,7 +1010,10 @@ clash-meta
 <a href='sing-box://import-remote-profile?url=${encodeURIComponent(subbestip)}' target='_blank'>singbox优选IP自动</a> <button onclick='copyToClipboard("${singboxlink}")'><i class="fa fa-clipboard"></i> Copy</button>
 <a href='${quantumultxlink}' target='_blank'>Quantumult X优选IP自动</a> <button onclick='copyToClipboard("${quantumultxlink}")'><i class="fa fa-clipboard"></i> Copy</button>
 <a href='sn://subscription?url=${encodeURIComponent(subbestip)}' target='_blank'>nekobox优选IP自动</a>
-<a href='${subbestip}&btoa=btoa' target='_blank'>v2rayN优选IP自动</a><button onclick='copyToClipboard("${subbestip}&btoa=btoa")'><i class="fa fa-clipboard"></i> Copy</button></p>`;
+<a href='${subbestip}&btoa=btoa' target='_blank'>v2rayN优选IP自动</a><button onclick='copyToClipboard("${subbestip}&btoa=btoa")'><i class="fa fa-clipboard"></i> Copy</button>
+<a href='//${hostName}/sub/${userIDArray[0]}?format=trojan' target='_blank'>trojan 节点订阅连接</a> <button onclick='copyToClipboard("${sublink}?format=trojan")'><i class="fa fa-clipboard"></i> Copy</button>
+<a href='${subbestip}&?format=trojan' target='_blank'>trojan 优选IP自动节点订阅</a> <button onclick='copyToClipboard("${subbestip}&format=trojan")'><i class="fa fa-clipboard"></i> Copy</button>
+</p>`;
 	// HTML Head with CSS and FontAwesome library
 	const htmlHead = `
   <head>
@@ -1093,6 +1096,10 @@ function createVLESSSub(userID_Path, hostName, format, dq) {
 	const userIDArray = userID_Path.includes(',') ? userID_Path.split(',') : [userID_Path];
 	const commonUrlPart_http = `?encryption=none&security=none&fp=random&type=ws&host=${hostName}&path=%2F%3Fed%3D2048#`;
 	const commonUrlPart_https = `?encryption=none&security=tls&sni=${hostName}&fp=random&type=ws&host=${hostName}&path=%2F%3Fed%3D2048#`;
+	//trojan
+	const trojan_http = `?alpn=http%2F1.1&security=none&fp=random&type=ws&host=${hostName}&path=%2F%3Fed%3D2048#`;
+	const trojan_https = `?alpn=http%2F1.1&security=tls&sni=${hostName}&fp=random&type=ws&host=${hostName}&path=%2F%3Fed%3D2048#`;
+//const trojanLink = `trojan://${密码}@${address}:${port}?security=tls&sni=${sni}&alpn=http%2F1.1&fp=randomized&type=ws&host=${伪装域名}&path=${encodeURIComponent(最终路径)}#${encodeURIComponent(addressid + 节点备注)}`;
 
 	const output = userIDArray.flatMap((userID) => {
 		if (format === 'qx') {
@@ -1130,7 +1137,31 @@ function createVLESSSub(userID_Path, hostName, format, dq) {
 			});
 
 			return [...httpsConfigurations];
-		} else {
+		} else if (format === 'trojan') {
+			const httpConfigurations = Array.from(portSet_http).flatMap((port) => {
+				if (!hostName.includes('pages.dev')) {
+					const urlPart = `${hostName}-HTTP-${port}`;
+					const vlessMainHttp = 'trojan://' + userID + '@' + hostName + ':' + port + trojan_http + urlPart;
+					return autoaddress.flatMap((proxyIP) => {
+						const vlessSecHttp = 'trojan://' + userID + '@' + proxyIP + ':' + port + trojan_https + urlPart + '-' + proxyIP + '-tunnel';
+						return [vlessMainHttp, vlessSecHttp];
+					});
+				}
+				return [];
+			});
+
+			const httpsConfigurations = Array.from(portSet_https).flatMap((port) => {
+				const urlPart = `${hostName}-HTTPS-${port}`;
+				const vlessMainHttps = 'trojan://' + userID + '@' + hostName + ':' + port + trojan_http + urlPart;
+				return autoaddress.flatMap((proxyIP) => {
+					const vlessSecHttps = 'trojan://' + userID + '@' + proxyIP + ':' + port + trojan_https + urlPart + '-' + proxyIP + '-tunnel';
+					return [vlessMainHttps, vlessSecHttps];
+				});
+			});
+
+			return [...httpConfigurations, ...httpsConfigurations];
+			
+		}else {
 			const httpConfigurations = Array.from(portSet_http).flatMap((port) => {
 				if (!hostName.includes('pages.dev')) {
 					const urlPart = `${hostName}-HTTP-${port}`;
@@ -1228,6 +1259,15 @@ function createVlessBestIpSub(userID_Path, hostName, newAddressesapi, format) {
 				vlessLink = `vless=${address}:${port},method=none,password=${userID_Path},obfs=wss,obfs-uri=/?ed=2048,obfs-host=${hostName},tls-verification=true,tls-host=${hostName},fast-open=false,udp-relay=false,tag=${addressid}`;
 			}
 		}
+		//trojan
+		if (format === 'trojan') {
+			if (port === '80' || port === '8080' || port === '8880' || port === '2052' || port === '2086' || port === '2095' || port === '2082' ) {
+				vlessLink = `trojan://${userID_Path}@${address}:${port}?alpn=http%2F1.1&security=tls&sni=${hostName}&fp=random&type=ws&host=${hostName}&path=&path=%2F%3Fed%3D2048#${hostName}`;
+			}else{
+				vlessLink = `trojan://${userID_Path}@${address}:${port}?alpn=http%2F1.1&security=&fp=random&type=ws&host=${hostName}&path=&path=%2F%3Fed%3D2048#${hostName}`;
+			}
+		}
+		
 
 		return vlessLink;
 	}).join('\n');
