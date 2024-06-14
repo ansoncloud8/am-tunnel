@@ -139,7 +139,8 @@ export default {
 						//拿随机
 						fakeUserID = uuid;
 						fakeHostName = url.searchParams.get('host') ? url.searchParams.get('host').toLowerCase() : request.headers.get('Host');
-						const vlessSubConfig = createVlessBestIpSub(fakeUserID, fakeHostName, newAddressesapi, 'format');
+						const format = url.searchParams.get('format') ? url.searchParams.get('format').toLowerCase() : "null";
+						const vlessSubConfig = createVlessBestIpSub(fakeUserID, fakeHostName, newAddressesapi, format);
 						const btoa_not = url.searchParams.get('btoa') ? url.searchParams.get('btoa').toLowerCase() : null;
 						
 					    if (btoa_not === 'btoa') {
