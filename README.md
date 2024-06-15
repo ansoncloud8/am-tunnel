@@ -114,11 +114,13 @@
 
 ## 已适配自适应订阅内容
    - [v2rayN](https://github.com/2dust/v2rayN)
+   - [v2rayU](https://github.com/yanue/V2rayU/releases)
+   - [sing-box](https://github.com/SagerNet/sing-box)
    - clash.meta（[clash-verge-rev
 ](https://github.com/clash-verge-rev/clash-verge-rev)，[Clash Nyanpasu](https://github.com/keiko233/clash-nyanpasu)，~[clash-verge](https://github.com/zzzgydi/clash-verge/tree/main)~，ClashX Meta、openclash）
-   - sing-box（SFI）
    - Quantumult X
    - 小火箭
+   - surge
   
 
 # 感谢
