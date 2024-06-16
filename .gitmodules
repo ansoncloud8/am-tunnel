@@ -1,0 +1,3 @@
+[submodule "naingio"]
+	path = naingio
+	url = https://github.com/naingio/naingio.git
