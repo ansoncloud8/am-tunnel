@@ -31,12 +31,15 @@ let addressesapi = [
 
 // 设置优选地址，不带端口号默认443，TLS订阅生成
 let addresses = [
-	// 'icook.tw:2053#官方优选域名',
-	// 'cloudflare.cfgo.cc#优选官方线路',
+	'icook.tw:443#t.me/AM_CLUBS',//官方优选域名
+	//'cloudflare.cfgo.cc:443#关注YouTube频道@AM_CLUB',
+	//'visa.com:443#AM科技(免费节点)'
 ];
 
 let autoaddress = [
-	'visa.com'//官方优选域名
+	'icook.tw:443#t.me/AM_CLUBS',//官方优选域名
+	'cloudflare.cfgo.cc:443#关注YouTube频道@AM_CLUB',
+	'visa.com:443#AM科技免费节点'
 ];
 
 let FileName = 'ansoncloud8.github.io';
@@ -132,7 +135,7 @@ export default {
 								}
 							});
 						} else {
-							return new Response(btoa(vlessSubConfig), {
+							return new Response(btoa(unescape(encodeURIComponent(vlessSubConfig))), {
 								status: 200,
 								headers: {
 									"Content-Type": "text/plain;charset=utf-8",
@@ -158,7 +161,7 @@ export default {
 								}
 							});
 						}else {
-							const base64Response = btoa(vlessSubConfig); // 重新进行 Base64 编码
+							const base64Response = btoa(unescape(encodeURIComponent(vlessSubConfig))); // 重新进行 Base64 编码
 							const response = new Response(base64Response, {
 								headers: {
 									// "Content-Disposition": `attachment; filename*=utf-8''${encodeURIComponent(FileName)}; filename=${FileName}`,
@@ -725,7 +728,7 @@ function base64ToArrayBuffer(base64Str) {
 	try {
 		// go use modified Base64 for URL rfc4648 which js atob not support
 		base64Str = base64Str.replace(/-/g, '+').replace(/_/g, '/');
-		const decode = atob(base64Str);
+		const decode = decodeURIComponent(escape(atob(base64Str)));
 		const arryBuffer = Uint8Array.from(decode, (c) => c.charCodeAt(0));
 		return { earlyData: arryBuffer.buffer, error: null };
 	} catch (error) {
@@ -943,9 +946,9 @@ function generateRandomNumber() {
 }
 
 function revertFakeInfo(content, userID, hostName, isBase64) {
-	if (isBase64) content = atob(content);//Base64解码
+	if (isBase64) content = decodeURIComponent(escape(atob(content)));//Base64解码
 	content = content.replace(new RegExp(fakeUserID, 'g'), userID).replace(new RegExp(fakeHostName, 'g'), hostName);
-	if (isBase64) content = btoa(content);//Base64编码
+	if (isBase64) content = btoa(unescape(encodeURIComponent(content)));//Base64编码
 	return content;
 }
 
@@ -966,7 +969,16 @@ function getVLESSConfig(userIDs, hostName) {
 	const output = userIDArray.map((userID) => {
 		const vlessMain = 'vless://' + userID + '@' + hostName + commonUrlPart;
 		const vlessSec = 'vless://' + userID + '@' + proxyIP + commonUrlPart;
-		return `v2ray default ip
+		return `################################################################
+telegram 交流群 技术大佬~在线交流!
+t.me/AM_CLUBS
+---------------------------------------------------------------
+github 项目地址 Star!Star!Star!!!
+https://github.com/ansoncloud8/am-tunnel
+---------------------------------------------------------------
+################################################################
+
+v2ray default ip
 ---------------------------------------------------------------
 ${vlessMain}
 <button onclick='copyToClipboard("${vlessMain}")'><i class="fa fa-clipboard"></i> Copy vlessMain</button>
@@ -1143,7 +1155,7 @@ function createVLESSSub(userID_Path, hostName, format, dq) {
 				const cfHttps = 'vless=cf.' + port + '.' + host + ':' + port + ',method=none,password=' + userID + ',obfs=wss,obfs-uri=/?ed=2048,obfs-host=' + hostName + ',tls-verification=true,tls-host=' + hostName + ',fast-open=false,udp-relay=false,tag=📶 CF_' + port;
 				return [sgHttps, hkHttps, krHttps, jpHttps, usHttps, twHttps, cfHttps];
 			});
-
+			
 			return [...httpsConfigurations];
 		} else if (format === 'trojan') {
 			const httpConfigurations = Array.from(portSet_http).flatMap((port) => {
@@ -1202,7 +1214,7 @@ function createVlessBestIpSub(userID_Path, hostName, newAddressesapi, format) {
 
 	addresses = addresses.concat(newAddressesapi);
 	// 使用Set对象去重
-	const uniqueAddresses = [...new Set(addresses)];
+	const uniqueAddresses = [...autoaddress,...new Set(addresses)];
 
 	const responseBody = uniqueAddresses.map((address, i) => {
 		let port = "443";
@@ -1237,7 +1249,10 @@ function createVlessBestIpSub(userID_Path, hostName, newAddressesapi, format) {
 		}
 		dq = addressid;
 		//🇸🇬 SG：新加坡 🇭🇰 HK：香港 🇰🇷 KR：韩国 🇯🇵 JP：日本 🇬🇧 GB：英国 🇺🇸 US：美国 🇼🇸 TW：台湾
-		if (addressid === 'SG') {
+		if (addressid.includes('AM')) {
+			addressid = addressid;
+			dq = addressid;
+		} else if (addressid === 'SG') {
 			addressid = '🇸🇬 SG_' + i;
 		} else if (addressid === 'HK') {
 			addressid = '🇭🇰 HK_' + i;
