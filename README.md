@@ -8,7 +8,7 @@
 - 进阶使用视频教程：[完整教程](https://www.youtube.com/watch?v=CiSdaNOCyOk) ***最佳推荐!!!***
 
 - Telegram交流群：[AM_CLUBS](https://t.me/AM_CLUBS)
-- YouTube频道：[@AM_CLUB](https://youtube.com/@AM_CLUB)
+- YouTube频道：[AM科技]https://youtube.com/@AM_CLUB
 - VLESS临时订阅地址：[VLESS](https://worker.amcloud.filegear-sg.me/866853eb-5293-4f09-bf00-e13eb237c655)
 - Github仓库地址：[ansoncloud8](https://github.com/ansoncloud8)
 
