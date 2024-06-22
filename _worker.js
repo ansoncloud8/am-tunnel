@@ -1,7 +1,7 @@
 /**
 *- Telegram交流群：https://t.me/AM_CLUBS
 *- YouTube频道：https://youtube.com/@AM_CLUB
-*- VLESS临时订阅地址：https://worker.amcloud.filegear-sg.me/866853eb-5293-4f09-bf00-e13eb237c655
+*- VLESS订阅地址：https://worker.amcloud.filegear-sg.me/866853eb-5293-4f09-bf00-e13eb237c655
 *- Github仓库地址：https://github.com/ansoncloud8
 **/
 
@@ -973,9 +973,11 @@ function getVLESSConfig(userIDs, hostName) {
 telegram 交流群 技术大佬~在线交流!
 t.me/AM_CLUBS
 ---------------------------------------------------------------
-github 项目地址 Star!Star!Star!!!
+github 项目地址 点击Star!Star!Star!!!
 https://github.com/ansoncloud8/am-tunnel
 ---------------------------------------------------------------
+订阅YouTube频道,更多技术分享
+https://youtube.com/@AM_CLUB
 ################################################################
 
 v2ray default ip
@@ -1022,17 +1024,15 @@ clash-meta
 <b style='font-size: 15px;'>欢迎！这是生成 VLESS 协议的配置。如果您发现这个项目很好用，请查看我们的 GitHub 项目给我一个star：</b>
 <a href='https://github.com/ansoncloud8/am-tunnel' target='_blank'>am-tunnel</a>
 <iframe src='https://ghbtns.com/github-btn.html?user=ansoncloud8&repo=am-tunnel&type=star&count=true&size=large' frameborder='0' scrolling='0' width='170' height='30' title='GitHub'></iframe>
-<a href='//${hostName}/sub/${userIDArray[0]}' target='_blank'>VLESS 节点订阅连接</a> <button onclick='copyToClipboard("${sublink}")'><i class="fa fa-clipboard"></i> Copy</button>
-<a href='${subbestip}' target='_blank'>VLESS 优选IP自动节点订阅</a> <button onclick='copyToClipboard("${subbestip}")'><i class="fa fa-clipboard"></i> Copy</button>
-<a href='clash://install-config?url=${encodeURIComponent(`https://${hostName}/sub/${userIDArray[0]}?format=clash`)}}' target='_blank'>Clash for Windows 节点订阅连接</a> <button onclick='copyToClipboard("${clashlink}")'><i class="fa fa-clipboard"></i> Copy</button>
-<a href='${sublink}?format=clash' target='_blank'>Clash 节点订阅连接</a> <button onclick='copyToClipboard("${sublink}?format=clash")'><i class="fa fa-clipboard"></i> Copy</button>
-<a href='clash://install-config?url=${encodeURIComponent(subbestip)}' target='_blank'>Clash优选IP自动</a> <button onclick='copyToClipboard("${clashlink}")'><i class="fa fa-clipboard"></i> Copy</button>
-<a href='sing-box://import-remote-profile?url=${encodeURIComponent(subbestip)}' target='_blank'>singbox优选IP自动</a> <button onclick='copyToClipboard("${singboxlink}")'><i class="fa fa-clipboard"></i> Copy</button>
-<a href='${quantumultxlink}' target='_blank'>Quantumult X优选IP自动</a> <button onclick='copyToClipboard("${quantumultxlink}")'><i class="fa fa-clipboard"></i> Copy</button>
-<a href='sn://subscription?url=${encodeURIComponent(subbestip)}' target='_blank'>nekobox优选IP自动</a>
-<a href='${subbestip}&btoa=btoa' target='_blank'>v2rayN优选IP自动</a><button onclick='copyToClipboard("${subbestip}&btoa=btoa")'><i class="fa fa-clipboard"></i> Copy</button>
-<a href='//${hostName}/sub/${userIDArray[0]}?format=trojan' target='_blank'>trojan 节点订阅连接</a> <button onclick='copyToClipboard("${sublink}?format=trojan")'><i class="fa fa-clipboard"></i> Copy</button>
-<a href='${subbestip}&format=trojan' target='_blank'>trojan 优选IP自动节点订阅</a> <button onclick='copyToClipboard("${subbestip}&format=trojan")'><i class="fa fa-clipboard"></i> Copy</button>
+<a href='//${hostName}/sub/${userIDArray[0]}' target='_blank'>VLESS节点订阅连接(v2rayU、v2rayN等工具)自动生成</a> <button onclick='copyToClipboard("${sublink}")'><i class="fa fa-clipboard"></i> Copy</button>
+<a href='${subbestip}' target='_blank'>VLESS节点订阅连接(v2rayU、v2rayN等工具)优选IP</a> <button onclick='copyToClipboard("${subbestip}")'><i class="fa fa-clipboard"></i> Copy</button>
+<a href='clash://install-config?url=${encodeURIComponent(`https://${hostName}/sub/${userIDArray[0]}?format=clash`)}}' target='_blank'>Clash节点订阅连接(clash-verge-rev、openclash等工具)自动生成</a> <button onclick='copyToClipboard("${clashlink}")'><i class="fa fa-clipboard"></i> Copy</button>
+<a href='clash://install-config?url=${encodeURIComponent(subbestip)}' target='_blank'>Clash节点订阅连接(clash-verge-rev、openclash等工具)优选IP</a> <button onclick='copyToClipboard("${clashlink}")'><i class="fa fa-clipboard"></i> Copy</button>
+<a href='sing-box://import-remote-profile?url=${encodeURIComponent(subbestip)}' target='_blank'>(sin-box工具)节点订阅连接优选IP</a> <button onclick='copyToClipboard("${singboxlink}")'><i class="fa fa-clipboard"></i> Copy</button>
+<a href='${quantumultxlink}' target='_blank'>(Quantumult X工具)节点订阅连接优选IP</a> <button onclick='copyToClipboard("${quantumultxlink}")'><i class="fa fa-clipboard"></i> Copy</button>
+<a href='sn://subscription?url=${encodeURIComponent(subbestip)}' target='_blank'>nekobox节点订阅连接优选IP</a>
+<a href='//${hostName}/sub/${userIDArray[0]}?format=trojan' target='_blank'>trojan节点订阅连接</a> <button onclick='copyToClipboard("${sublink}?format=trojan")'><i class="fa fa-clipboard"></i> Copy</button>
+<a href='${subbestip}&format=trojan' target='_blank'>trojan节点订阅连接优选IP</a> <button onclick='copyToClipboard("${subbestip}&format=trojan")'><i class="fa fa-clipboard"></i> Copy</button>
 </p>`;
 	// HTML Head with CSS and FontAwesome library
 	const htmlHead = `
