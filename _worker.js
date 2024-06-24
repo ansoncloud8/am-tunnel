@@ -1215,7 +1215,7 @@ function createVlessBestIpSub(userID_Path, hostName, newAddressesapi, format) {
 
 	addresses = addresses.concat(newAddressesapi);
 	// 使用Set对象去重
-	const uniqueAddresses = [...addresses,...new Set(addresses)];
+	const uniqueAddresses = [...new Set(addresses)];
 
 	const responseBody = uniqueAddresses.map((address, i) => {
 		let port = "443";
@@ -1334,4 +1334,3 @@ async function nginx() {
 	`
 	return text;
 }
-
