@@ -3,9 +3,11 @@
 
 这是一个基于 Cloudflare Workers 和 Pages平台的脚本，在原版的基础上修改了显示 VLESS 配置信息转换为订阅内容。使用该脚本，你可以方便地将 VLESS、trojan 配置信息使用在线配置转换到 Clash、 Singbox 、Quantumult X等工具中。
 
-- 基础部署视频教程：[小白教程](https://www.youtube.com/watch?v=f9hDJCqAEGA)
-- 快速部署视频教程：[详细教程](https://www.youtube.com/watch?v=8oZvklBkMj4)
-- 进阶使用视频教程：[完整教程](https://www.youtube.com/watch?v=CiSdaNOCyOk) ***最佳推荐!!!***
+- 基础部署视频教程：[小白教程](https://www.youtube.com/watch?v=f9hDJCqAEGA) 小白必看 一步到胃 最佳推荐!!!
+- 快速部署视频教程：[详细教程](https://www.youtube.com/watch?v=XS0EgqckUKo) ***最佳推荐!!!***
+- 进阶使用视频教程：[进阶教程](https://www.youtube.com/watch?v=JDAQYD6bvEM) 折腾自己的优选IP
+- 高级使用视频教程：[高级教程](https://www.youtube.com/watch?v=lQ2Evd_xPRY) 成为折腾的高手
+
 
 - Telegram交流群：[AM_CLUBS](https://t.me/AM_CLUBS)
 - YouTube频道：[AM科技]https://youtube.com/@AM_CLUB
