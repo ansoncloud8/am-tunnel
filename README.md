@@ -8,11 +8,11 @@
 - 进阶使用视频教程：[进阶教程](https://www.youtube.com/watch?v=JDAQYD6bvEM) 折腾自己的优选IP
 - 高级使用视频教程：[高级教程](https://www.youtube.com/watch?v=lQ2Evd_xPRY) 成为折腾的高手
 
-
-- Telegram交流群：[AM_CLUBS](https://t.me/AM_CLUBS)
-- YouTube频道：[AM科技]https://youtube.com/@AM_CLUB
-- VLESS临时订阅地址：[VLESS](https://worker.amcloud.filegear-sg.me/866853eb-5293-4f09-bf00-e13eb237c655)
-- Github仓库地址：[ansoncloud8](https://github.com/ansoncloud8)
+- AM科技官网：[https://gw.809098.xyz](官网)
+- YouTube：[https://youtube.com/@AM_CLUB](AM科技)
+- Telegram：[https://t.me/AM_CLUBS](AM_CLUBS)
+- Github：[https://github.com/ansoncloud8](ansoncloud8)
+- VLESS订阅信息：[节点订阅信息](https://worker.amcloud.filegear-sg.me/866853eb-5293-4f09-bf00-e13eb237c655)
 
 
 # 免责声明
