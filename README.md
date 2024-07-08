@@ -8,7 +8,7 @@
 - 进阶使用视频教程：[进阶教程](https://www.youtube.com/watch?v=JDAQYD6bvEM) 折腾自己的优选IP
 - 高级使用视频教程：[高级教程](https://www.youtube.com/watch?v=lQ2Evd_xPRY) 成为折腾的高手
 
-- AM科技官网：[https://gw.809098.xyz](官网)
+- AM科技官网：[https://am.809098.xyz](官网)
 - YouTube：[https://youtube.com/@AM_CLUB](AM科技)
 - Telegram：[https://t.me/AM_CLUBS](AM_CLUBS)
 - Github：[https://github.com/ansoncloud8](ansoncloud8)
