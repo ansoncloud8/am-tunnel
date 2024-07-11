@@ -1032,8 +1032,6 @@ clash-meta
 <a href='sing-box://import-remote-profile?url=${encodeURIComponent(subbestip)}' target='_blank'>(sin-box工具)节点订阅连接优选IP</a> <button onclick='copyToClipboard("${singboxlink}")'><i class="fa fa-clipboard"></i> Copy</button>
 <a href='${quantumultxlink}' target='_blank'>(Quantumult X工具)节点订阅连接优选IP</a> <button onclick='copyToClipboard("${quantumultxlink}")'><i class="fa fa-clipboard"></i> Copy</button>
 <a href='sn://subscription?url=${encodeURIComponent(subbestip)}' target='_blank'>nekobox节点订阅连接优选IP</a>
-<a href='//${hostName}/sub/${userIDArray[0]}?format=trojan' target='_blank'>trojan节点订阅连接</a> <button onclick='copyToClipboard("${sublink}?format=trojan")'><i class="fa fa-clipboard"></i> Copy</button>
-<a href='${subbestip}&format=trojan' target='_blank'>trojan节点订阅连接优选IP</a> <button onclick='copyToClipboard("${subbestip}&format=trojan")'><i class="fa fa-clipboard"></i> Copy</button>
 </p>`;
 	// HTML Head with CSS and FontAwesome library
 	const htmlHead = `
