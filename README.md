@@ -125,7 +125,13 @@
    - 小火箭
    - surge
   
+ # 
+<details><summary><strong> [点击展开] 赞赏支持 ~🧧</strong></summary>
+*我非常感谢您的赞赏和支持，它们将极大地激励我继续创新，持续产生有价值的工作。*
+  
+- **TRC20:** `TWTxUyay6QJN3K4fs4kvJTT8Zfa2mWTwDD`
+  
+</details>
 
 # 感谢
-[3Kmfi6HP](https://github.com/3Kmfi6HP/EDtunnel)、[ACL4SSR](https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash/config)、[肥羊订阅转换](https://suburl.v1.mk)
-
+[3Kmfi6HP](https://github.com/3Kmfi6HP/EDtunnel)、[ACL4SSR](https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash/config)
