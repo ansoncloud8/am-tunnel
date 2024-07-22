@@ -82,6 +82,7 @@ export default {
 			userID = env.UUID || userID;
 			proxyIP = env.PROXYIP || proxyIP;
 			dohURL = env.DNS_RESOLVER_URL || dohURL;
+			subconfig = env.SUBCONFIG || subconfig;
 			let userID_Path = userID;
 			if (userID.includes(',')) {
 				userID_Path = userID.split(',')[0];
