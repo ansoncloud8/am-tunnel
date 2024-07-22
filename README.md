@@ -1,4 +1,6 @@
-# AmTunnel
+# am-tunnel
+https://github.com/ansoncloud8/am-tunnel
+
 # Cloudflare Workers 和 Pages 生成节点订阅
 
 这是一个基于 Cloudflare Workers 和 Pages平台的脚本，在原版的基础上修改了显示 VLESS 配置信息转换为订阅内容。使用该脚本，你可以方便地将 VLESS、trojan 配置信息使用在线配置转换到 Clash、 Singbox 、Quantumult X等工具中。
@@ -8,11 +10,10 @@
 - 进阶使用视频教程：[进阶教程](https://www.youtube.com/watch?v=JDAQYD6bvEM) 折腾自己的优选IP
 - 高级使用视频教程：[高级教程](https://www.youtube.com/watch?v=lQ2Evd_xPRY) 成为折腾的高手
 
-- AM科技官网：[https://am.809098.xyz](官网)
-- YouTube：[https://youtube.com/@AM_CLUB](AM科技)
-- Telegram：[https://t.me/AM_CLUBS](AM_CLUBS)
-- Github：[https://github.com/ansoncloud8](ansoncloud8)
-- VLESS订阅信息：[节点订阅信息](https://worker.amcloud.filegear-sg.me/866853eb-5293-4f09-bf00-e13eb237c655)
+- 官网教程：[AM科技](https://am.809098.xyz)
+- YouTube频道：[@AM_CLUB](https://youtube.com/@AM_CLUB)
+- Telegram交流群：[@AM_CLUBS](https://t.me/AM_CLUBS)
+- 免费订阅：[进群发送关键字: 订阅](https://t.me/AM_CLUBS)
 
 
 # 免责声明
@@ -125,7 +126,13 @@
    - 小火箭
    - surge
   
+ # 
+<details><summary><strong> [点击展开] 赞赏支持 ~🧧</strong></summary>
+*我非常感谢您的赞赏和支持，它们将极大地激励我继续创新，持续产生有价值的工作。*
+  
+- **TRC20:** `TWTxUyay6QJN3K4fs4kvJTT8Zfa2mWTwDD`
+  
+</details>
 
 # 感谢
-[3Kmfi6HP](https://github.com/3Kmfi6HP/EDtunnel)、[ACL4SSR](https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash/config)、[肥羊订阅转换](https://suburl.v1.mk)
-
+[3Kmfi6HP](https://github.com/3Kmfi6HP/EDtunnel)、[ACL4SSR](https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash/config)
