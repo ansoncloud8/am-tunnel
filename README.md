@@ -1,5 +1,4 @@
-# am-tunnel
-https://github.com/ansoncloud8/am-tunnel
+# [am-tunnel](https://github.com/ansoncloud8/am-tunnel)
 
 # Cloudflare Workers 和 Pages 生成节点订阅
 
@@ -10,11 +9,12 @@ https://github.com/ansoncloud8/am-tunnel
 - 进阶使用视频教程：[进阶教程](https://www.youtube.com/watch?v=JDAQYD6bvEM) 折腾自己的优选IP
 - 高级使用视频教程：[高级教程](https://www.youtube.com/watch?v=lQ2Evd_xPRY) 成为折腾的高手
 
-- 官网教程：[AM科技](https://am.809098.xyz)
-- YouTube频道：[@AM_CLUB](https://youtube.com/@AM_CLUB)
-- Telegram交流群：[@AM_CLUBS](https://t.me/AM_CLUBS)
-- 免费订阅：[进群发送关键字: 订阅](https://t.me/AM_CLUBS)
+- 官网教程：[AM科技](https://am.809098.xyz)   YouTube频道：[@AM_CLUB](https://youtube.com/@AM_CLUB)   Telegram交流群：[@AM_CLUBS](https://t.me/AM_CLUBS)   免费订阅：[进群发关键字: 订阅](https://t.me/AM_CLUBS)
 
+## 订阅工具 
+- [(安卓)v2rayNG](https://github.com/2dust/v2rayNG/releases)      [(安卓)singbox](https://github.com/SagerNet/sing-box/releases)      [(苹果)singbox](https://github.com/SagerNet/sing-box/releases)      [(苹果)Hiddify](https://github.com/hiddify/hiddify-next/releases)
+- [(win)v2rayN](https://github.com/2dust/v2rayN/releases)      [(win)singbox](https://github.com/SagerNet/sing-box/releases)      [(win)clashvergerev](https://github.com/clash-verge-rev/clash-verge-rev/releases)      [(win)Hiddify](https://github.com/hiddify/hiddify-next/releases)      [(win)clashnyanpasu](https://github.com/LibNyanpasu/clash-nyanpasu/releases)      [(mac)clashnyanpasu](https://github.com/LibNyanpasu/clash-nyanpasu/releases)
+- [(mac)v2rayU](https://github.com/yanue/V2rayU/releases)      [(mac)singbox](https://github.com/SagerNet/sing-box/releases)      [(mac)clashvergerev](https://github.com/clash-verge-rev/clash-verge-rev/releases)      [(mac)Hiddify](https://github.com/hiddify/hiddify-next/releases)
 
 # 免责声明
 
