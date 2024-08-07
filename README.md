@@ -1,4 +1,5 @@
-# [am-tunnel](https://github.com/ansoncloud8/am-tunnel)
+# [am-cf-tunnel](https://github.com/ansoncloud8/am-cf-tunnel)
+## 保留旧版本，新版本迁移到这个库  [am-cf-tunnel](https://github.com/ansoncloud8/am-cf-tunnel)
 
 # Cloudflare Workers 和 Pages 生成节点订阅
 
